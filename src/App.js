@@ -1,24 +1,18 @@
-import logo from './logo.svg';
+import React from 'react';
+import Inventory from './Inventory/inventoryComponent';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  return(
+      <div className = "container">
+          <h1>New Inventory</h1>
+          <Inventory name = "Men Suits" StockCount = "30" Price = "$300" />
+          <Inventory name = "Men Jeans" StockCount = "20" Price ="$150" />
+          <Inventory name = "Women Suits" StockCount = "10" Price = "$55" />
+          <Inventory name = "Men Shoes" StockCount = "100" Price = "$150" />
+          <Inventory name = "Socks" StockCount = "40" Price = "$15" />
+
+      </div>
   );
 }
 

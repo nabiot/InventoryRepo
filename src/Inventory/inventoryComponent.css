@@ -1,0 +1,13 @@
+
+.inventory {
+    border: solid 2px black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+}
+
+div {
+    border: solid 2px black;
+    flex: 1;
+}
